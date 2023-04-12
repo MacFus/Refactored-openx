@@ -10,6 +10,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class Initialize{
+
     public ArrayList<User> initUsers(String userUrl){
         try {
             Type type = new TypeToken<ArrayList<User>>(){}.getType();
@@ -30,7 +31,6 @@ public class Initialize{
 
     public ArrayList<Cart> initCarts(String cartUrl) {
         try {
-//            Gson gson = new GsonBuilder().setDateFormat(Cart.PATTERN)
             Type type = new TypeToken<ArrayList<Cart>>(){}.getType();
             return new Gson().fromJson(Utils.readUrl(cartUrl),type);
         } catch (Exception e) {
@@ -38,7 +38,5 @@ public class Initialize{
         }
     }
 
-//    private <T> Type getType(T t){
-//        return new TypeToken<ArrayList<T>>(){}.getType();
-//    }
+
 }

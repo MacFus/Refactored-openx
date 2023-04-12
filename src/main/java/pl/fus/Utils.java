@@ -13,7 +13,7 @@ public class Utils {
         try {
             URL url = new URL(urlString);
             reader = new BufferedReader(new InputStreamReader(url.openStream()));
-            StringBuffer buffer = new StringBuffer();
+            StringBuilder buffer = new StringBuilder();
             int read;
             char[] chars = new char[1024];
             while ((read = reader.read(chars)) != -1)
@@ -28,41 +28,40 @@ public class Utils {
 
     public static void findLongestDistanceBetweenUsers(ArrayList<User> users) {
         double maxDistance = 0;
+
         User user1 = null, user2 = null;
         for (User u1 : users) {
             double tempDistance = 0;
             for (User u2 : users) {
+                if(u1.getId() == u2.getId())
+                    break;
                 tempDistance = distance(
                         u1.getAddress().getGeolocation().getLat(),
                         u1.getAddress().getGeolocation().getLon(),
                         u2.getAddress().getGeolocation().getLat(),
-                        u2.getAddress().getGeolocation().getLat());
+                        u2.getAddress().getGeolocation().getLon());
                 if (maxDistance < tempDistance) {
                     user1 = u1;
                     user2 = u2;
-                    maxDistance = Math.max(maxDistance, tempDistance);
+                    maxDistance = tempDistance;
+                    System.out.println(u1 + " " + u2 + " distance: " + tempDistance);
                 }
             }
-            maxDistance = Math.max(maxDistance, tempDistance);
         }
-        System.out.println("Furthest distance is between: " + user1 + " and " + user2);
+        System.out.println("Furthest distance is between: " + user1 + " and " + user2 + "\nDistance: " + maxDistance + " km\n");
     }
 
-    private static double distance(double lat1, double lon1, double lat2, double lon2) {
-        double theta = lon1 - lon2;
-        double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.cos(deg2rad(theta));
-        dist = Math.acos(dist);
-        dist = rad2deg(dist);
-        dist = dist * 60 * 1.1515;
-        dist = dist * 1.609344;
-        return dist;
+
+
+    public static double distance(double lat1, double lon1, double lat2, double lon2) {
+        final int R = 6371;
+        double latDistance = Math.toRadians(lat2 - lat1);
+        double lonDistance = Math.toRadians(lon2 - lon1);
+        double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
+                + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2))
+                * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
     }
 
-    private static double deg2rad(double deg) {
-        return (deg * Math.PI / 180.0);
-    }
-
-    private static double rad2deg(double rad) {
-        return (rad * 180.0 / Math.PI);
-    }
 }

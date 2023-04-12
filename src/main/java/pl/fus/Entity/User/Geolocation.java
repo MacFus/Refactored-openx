@@ -13,10 +13,10 @@ public class Geolocation {
     private String lon;
 
     public double getLat() {
-        return Double.valueOf(lat);
+        return Math.floor(Double.parseDouble(lat));
     }
 
     public double getLon() {
-        return Double.valueOf(lon);
+        return Math.floor(Double.parseDouble(lon));
     }
 }
