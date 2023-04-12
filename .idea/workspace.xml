@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e66edc58-3eec-4957-bd54-d50e9ab4e21b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/CartProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/CartProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Geolocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Geolocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +70,7 @@
       <recent name="pl.fus" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.fus in OpenX">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.fus.Main" />
       <module name="OpenX" />
@@ -147,10 +139,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.fus in OpenX" />
         <item itemvalue="JUnit.ProductTest.shouldCreateDataStructureOfCategoriesAndTotalValue" />
         <item itemvalue="JUnit.CartTest.shouldFindCartWithHighestValue" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +154,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681308899586</updated>
-      <workItem from="1681308901024" duration="21907000" />
+      <workItem from="1681308901024" duration="22212000" />
     </task>
     <servers />
   </component>
@@ -200,7 +192,7 @@
     <SUITE FILE_PATH="coverage/Refactored_openx$ProductTest_shouldCreateDataStructureOfCategoriesAndTotalValue.ic" NAME="ProductTest.shouldCreateDataStructureOfCategoriesAndTotalValue Coverage Results" MODIFIED="1681330966030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>pl.fus.Entity.Product.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Refactored_openx$fus_in_OpenX.ic" NAME="fus in OpenX Coverage Results" MODIFIED="1681330507982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Refactored_openx$fus_in_OpenX.ic" NAME="fus in OpenX Coverage Results" MODIFIED="1681331210310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Refactored_openx$InitializeTest_testParseHardcodedContributors.ic" NAME="InitializeTest.testParseHardcodedContributors Coverage Results" MODIFIED="1681331116218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>pl.fus.*</FILTER>
     </SUITE>
