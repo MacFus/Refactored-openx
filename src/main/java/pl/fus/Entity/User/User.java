@@ -14,10 +14,17 @@ public class User {
     private Name name;
     private String phone;
 
+    public User(Address address, int id) {
+        this.address = address;
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 '}';
     }
+
+
 }

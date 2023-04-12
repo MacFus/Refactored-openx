@@ -5,7 +5,6 @@ import lombok.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
 public class Geolocation {
     @SerializedName("lat")
     private String lat;
@@ -18,5 +17,10 @@ public class Geolocation {
 
     public double getLon() {
         return Math.floor(Double.parseDouble(lon));
+    }
+
+    public Geolocation(String lat, String lon) {
+        this.lat = lat;
+        this.lon = lon;
     }
 }

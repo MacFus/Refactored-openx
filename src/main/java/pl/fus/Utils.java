@@ -26,29 +26,35 @@ public class Utils {
         }
     }
 
-    public static void findLongestDistanceBetweenUsers(ArrayList<User> users) {
+    public static ArrayList<User> findLongestDistanceBetweenUsers(ArrayList<User> users) {
         double maxDistance = 0;
 
-        User user1 = null, user2 = null;
+        ArrayList<User> usersToReturn = new ArrayList<>();
         for (User u1 : users) {
             double tempDistance = 0;
             for (User u2 : users) {
-                if(u1.getId() == u2.getId())
-                    break;
+//                if(u1.getId() == u2.getId())
+//                    break;
                 tempDistance = distance(
                         u1.getAddress().getGeolocation().getLat(),
                         u1.getAddress().getGeolocation().getLon(),
                         u2.getAddress().getGeolocation().getLat(),
                         u2.getAddress().getGeolocation().getLon());
                 if (maxDistance < tempDistance) {
-                    user1 = u1;
-                    user2 = u2;
+                    if(usersToReturn.isEmpty()){
+                        usersToReturn.add(u1);
+                        usersToReturn.add(u2);
+                    }else{
+                        usersToReturn.set(0,u1);
+                        usersToReturn.set(1,u2);
+                    }
                     maxDistance = tempDistance;
                     System.out.println(u1 + " " + u2 + " distance: " + tempDistance);
                 }
             }
         }
-        System.out.println("Furthest distance is between: " + user1 + " and " + user2 + "\nDistance: " + maxDistance + " km\n");
+        System.out.println("Furthest distance is between: " + usersToReturn.get(0) + " and " + usersToReturn.get(1) + "\nDistance: " + maxDistance + " km\n");
+        return usersToReturn;
     }
 
 

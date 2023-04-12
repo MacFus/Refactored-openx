@@ -8,18 +8,27 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/CartProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Cart/CartProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/Product/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Geolocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/Geolocation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Entity/User/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Initialize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/UrlInitializatior.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/fus/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fus/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +53,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "D:/Repositories/Refactored-openx/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,8 +69,16 @@
       <recent name="D:\Repositories\Refactored-openx\src" />
       <recent name="D:\Repositories\Refactored-openx\src\main\java\pl\fus" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.fus.Entity.Product" />
+      <recent name="pl.fus.Entity.Cart" />
+      <recent name="pl.fus" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.fus in OpenX">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.fus.Main" />
       <module name="OpenX" />
@@ -69,6 +88,46 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.shouldFindCartWithHighestValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OpenX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.fus.Entity.Cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.fus.Entity.Cart" />
+      <option name="MAIN_CLASS_NAME" value="pl.fus.Entity.Cart.CartTest" />
+      <option name="METHOD_NAME" value="shouldFindCartWithHighestValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.shouldCreateDataStructureOfCategoriesAndTotalValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OpenX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.fus.Entity.Product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.fus.Entity.Product" />
+      <option name="MAIN_CLASS_NAME" value="pl.fus.Entity.Product.ProductTest" />
+      <option name="METHOD_NAME" value="shouldCreateDataStructureOfCategoriesAndTotalValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fus in OpenX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OpenX" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/pl/fus" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,6 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.fus in OpenX" />
+        <item itemvalue="JUnit.ProductTest.shouldCreateDataStructureOfCategoriesAndTotalValue" />
+        <item itemvalue="JUnit.CartTest.shouldFindCartWithHighestValue" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -100,11 +162,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681308899586</updated>
-      <workItem from="1681308901024" duration="11043000" />
+      <workItem from="1681308901024" duration="21907000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/fus/Main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/fus/Utils.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="pl.fus.Entity.Cart.Cart" memberName="products" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Refactored_openx$UtilsTest_shouldReturnUsersOneAndThree.ic" NAME="UtilsTest.shouldReturnUsersOneAndThree Coverage Results" MODIFIED="1681329085922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.fus.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Refactored_openx$CartTest_shouldFindCartWithHighestValue.ic" NAME="CartTest.shouldFindCartWithHighestValue Coverage Results" MODIFIED="1681330483956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.fus.Entity.Cart.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Refactored_openx$ProductTest_shouldCreateDataStructureOfCategoriesAndTotalValue.ic" NAME="ProductTest.shouldCreateDataStructureOfCategoriesAndTotalValue Coverage Results" MODIFIED="1681330966030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.fus.Entity.Product.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Refactored_openx$fus_in_OpenX.ic" NAME="fus in OpenX Coverage Results" MODIFIED="1681330507982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Refactored_openx$InitializeTest_testParseHardcodedContributors.ic" NAME="InitializeTest.testParseHardcodedContributors Coverage Results" MODIFIED="1681331116218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.fus.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Refactored_openx$UtilsTest.ic" NAME="UtilsTest Coverage Results" MODIFIED="1681325091064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.fus.*</FILTER>
+    </SUITE>
   </component>
 </project>

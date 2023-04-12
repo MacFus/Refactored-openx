@@ -1,5 +1,6 @@
 package pl.fus.Entity.Product;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -18,6 +19,16 @@ public class Product {
     private String category;
     private String image;
     private Rating rating;
+
+    public Product(int id, double price) {
+        this.id = id;
+        this.price = price;
+    }
+
+    public Product(double price, String category) {
+        this.price = price;
+        this.category = category;
+    }
 
     public static HashMap<String, AtomicReference<Double>> createDataStructureOfCategoriesAndTotalValue(ArrayList<Product> products){
         System.out.println("Data structure containing all available product categories and the total value of products of a given category:");

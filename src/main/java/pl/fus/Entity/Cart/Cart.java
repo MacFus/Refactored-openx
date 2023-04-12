@@ -9,23 +9,23 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
 
+
 @Getter
 public class Cart {
+
     private int id;
     private int userId;
     private Date date;
     @SerializedName("products")
     private ArrayList<CartProduct> products;
 
-    @Override
-    public String toString() {
-        return "Cart{" +
-                "id=" + id +
-                ", userId=" + userId +
-                '}';
+    public Cart(int id, int userId, ArrayList<CartProduct> products) {
+        this.id = id;
+        this.userId = userId;
+        this.products = products;
     }
 
-    public static void findCartWithHighestValue(ArrayList<Cart> carts, ArrayList<Product> products, ArrayList<User> users){
+    public static Cart findCartWithHighestValue(ArrayList<Cart> carts, ArrayList<Product> products, ArrayList<User> users){
         Map<Integer, Double> productValueMap = Product.idToValueMap(products);
         double max = 0;
         Cart cart = null;
@@ -47,7 +47,8 @@ public class Cart {
             max = Math.max(max, tempMax);
         }
         assert cart != null : "Cart is null";
-        System.out.println("Cart with highest value is cart number: " + cart + ". And value of it equals: " + max +". Owner: " + user);
+        System.out.println("Cart with highest value is cart number: " + cart.getId() + ". And value of it equals: " + max +". Owner: " + user);
+        return cart;
     }
 
 

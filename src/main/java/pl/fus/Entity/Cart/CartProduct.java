@@ -10,4 +10,9 @@ public class CartProduct {
     private int quantity;
 //    private transient Product product;
 
+
+    public CartProduct(int productId, int quantity) {
+        this.productId = productId;
+        this.quantity = quantity;
+    }
 }

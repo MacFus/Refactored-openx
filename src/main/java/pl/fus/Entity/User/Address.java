@@ -16,4 +16,8 @@ public class Address {
     private String street;
     private int number;
     private String zipcode;
+
+    public Address(Geolocation geolocation) {
+        this.geolocation = geolocation;
+    }
 }
