@@ -29,12 +29,10 @@ public class Main {
         HashMap<String, AtomicReference<Double>> dataStructureOfCategoriesAndTotalValue = Product.createDataStructureOfCategoriesAndTotalValue(products);
 
         // #3
-        Cart.findCartWithHighestValue(carts, products, users);
+        Cart cartWithHighestValue = Cart.findCartWithHighestValue(carts, products, users);
 
         // #4
-        Utils.findLongestDistanceBetweenUsers(users);
-
-
+        ArrayList<User> usersWithLongestDistance = Utils.findLongestDistanceBetweenUsers(users);
 
     }
 }
